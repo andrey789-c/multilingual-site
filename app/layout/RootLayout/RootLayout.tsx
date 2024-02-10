@@ -1,11 +1,23 @@
 import { FC, ReactChild } from "react";
 import { Header } from "../Header/Header";
 
-export const RootLayout: FC<{ children: ReactChild }> = ({ children }) => {
+import '@/app/styles/main.scss'
+import Head from "next/head";
+
+export const RootLayout: FC<{ children: ReactChild, title: string, description?: string }> = ({ children, title, description }) => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>{title}</title>
+        {description && <meta name="description" content={description}/>}
+      
+      </Head>
+      <>
       <Header />
       <main>{children}</main>
-    </div>
+      </>
+      
+    </>
+      
   );
 };
