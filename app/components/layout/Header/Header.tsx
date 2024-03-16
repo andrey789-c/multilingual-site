@@ -1,14 +1,15 @@
-import { Container } from '@/app/components/Container/Container'
+import { Container } from '@/app/components/shared/Container/Container'
 import s from './Header.module.scss'
-import {Logo} from '@/app/icons/Logo'
+import {Logo} from '@/app/components/icons/Logo'
+import Link from 'next/link'
 
 export const Header = () => {
     return <header className={s.header}>
         <Container>
             <div className={s.header__wrapper}>
-            <div className={s.logo}>
+            <Link href={'/'} className={s.logo}>
                 <Logo />
-            </div>
+            </Link>
             <div className={s.header__list}></div>
             </div>
             

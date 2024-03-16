@@ -1,6 +1,6 @@
 import { ReactChild, ReactNode } from "react";
 
 export interface IContainer {
-    children: ReactChild,
+    children: ReactNode,
     styles?: string
 }
