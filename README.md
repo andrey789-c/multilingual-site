@@ -1,4 +1,4 @@
-### Multilingual site
+# Multilingual site
 
 This project presents a simple landing page, consisting of one page, where the main work falls on beautiful animations and multilinguality of the site
 
