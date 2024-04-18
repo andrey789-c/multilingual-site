@@ -1,3 +1,7 @@
+.episodes {
+    margin-bottom: 160px;
+}
+
 .title {
     font-size: 64px;
     line-height: 80px;
@@ -21,6 +25,7 @@
         gap: 53px;
     }
     &__type {
+        display: inline-block;
         background: #191919;
         padding: 0 16px;
         color: #ffffff;
@@ -28,5 +33,25 @@
         line-height: 27px;
         margin-bottom: 49px;
     }
-    
+    &__number {
+        color: #118DA8;
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 18px;
+
+    }
+    &__title {
+        width: 701px;
+        font-size: 64px;
+        line-height: 70px;
+        color: #ffffff;
+        letter-spacing: 2.53px;
+        margin-bottom: 28px;
+    }
+    &__description {
+        font-size: 22px;
+        line-height: 33px;
+        color: #ffffff;
+        opacity: 0.7;
+    }
 }

@@ -1,0 +1,37 @@
+.input {
+    display: block;
+    height: 82px;
+    background-color: #191919;
+    border-radius: 6px;
+    position: relative;
+    padding: 20px 19px;
+
+    span {
+        position: absolute;
+        top: 26px;
+        left: 19px;
+
+        color: #ffffff;
+        opacity: 0.7;
+        font-size: 24px;
+        line-height: 29px;
+        transition: all .3s;
+    }
+
+    input {
+        height: 100%;
+        width: 100%;
+        font-size: 24px;
+        line-height: 29px;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        color: #ffffff;
+        
+
+        &:focus + span, &:active + span, &.active + span{
+            top: 2px;
+            font-size: 12px;
+        }
+    }
+}

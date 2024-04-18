@@ -18,6 +18,8 @@ export const Episodes = () => {
                             <div className={s.espisode__content}>
                                 <div className={s.episode__type}>{episode.type}</div>
                                 <div className={s.episode__number}>Episode {episode.id}</div>
+                                <div className={s.episode__title}>{episode.title}</div>
+                                <div className={s.episode__description}>{episode.description}</div>
                             </div>
                         </div>
                         
